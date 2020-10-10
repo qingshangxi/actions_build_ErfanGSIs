@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.9.7/miui_CEPHEUS_20.9.7_d2af147a7e_10.0.zip
+  ROM_URL: https://hugeota.d.miui.com/20.9.29/miui_GINKGO_20.9.29_5ae8eaf238_10.0.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -51,7 +51,7 @@ jobs:
               sudo bash setup.sh
        
        - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME ab
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME --ab
        
        - name: Zip GSI  
          run: |
@@ -61,7 +61,7 @@ jobs:
        - name: Upload GSI to BitSend
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer Swi final/GSI.zip
+              ./transfer wet final/GSI.zip
 
          
             
