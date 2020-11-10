@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.11.4/miui_GRUS_20.11.4_e1fbaae464_10.0.zip
+  ROM_URL: https://hugeota.d.miui.com/20.11.9/miui_GRUS_20.11.9_db6f0b9349_10.0.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
