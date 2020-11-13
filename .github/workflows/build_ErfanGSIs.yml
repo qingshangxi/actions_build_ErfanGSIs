@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.11.9/miui_GRUS_20.11.9_db6f0b9349_10.0.zip
+  ROM_URL: https://hugeota.d.miui.com/20.11.11/miui_GRUS_20.11.11_81669fc3fe_10.0.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -42,7 +42,7 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk wget
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/qingshangxi/ErfanGSIs.git
        
        - name: Setting up ErfanGSI requirements
          run: |
