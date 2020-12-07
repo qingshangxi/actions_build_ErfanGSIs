@@ -58,7 +58,7 @@ jobs:
               mkdir final
               zip -r final/GSI.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        
-       - name: Upload GSI to WeiShuShu
+       - name: Upload GSI to CowTransfer
          run: |
               curl -sL https://git.io/cowtransfer | sh
               ./cowtransfer-uploader final/GSI.zip
